@@ -12,50 +12,75 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/sombrilla_de_playa"
         android:text="@string/boton_paquetes"
+        android:textColor="@color/material_dynamic_neutral30"
         android:textSize="8sp"
         app:layout_constraintStart_toEndOf="@+id/idboton_vuelos"
-        app:layout_constraintTop_toTopOf="@+id/idboton_vuelos" />
+        app:layout_constraintTop_toTopOf="@+id/idboton_vuelos"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/idboton_hoteles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/hotel"
         android:text="@string/boton_hoteles"
+        android:textColor="@color/material_dynamic_neutral30"
         android:textSize="8sp"
         app:layout_constraintStart_toEndOf="@+id/idboton_paquetes"
-        app:layout_constraintTop_toTopOf="@+id/idboton_paquetes" />
+        app:layout_constraintTop_toTopOf="@+id/idboton_paquetes"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/idboton_seguros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/escudo"
         android:text="@string/boton_seguros"
+        android:textColor="@color/material_dynamic_neutral30"
         android:textSize="8sp"
         app:layout_constraintStart_toEndOf="@+id/idboton_hoteles"
-        app:layout_constraintTop_toTopOf="@+id/idboton_hoteles" />
+        app:layout_constraintTop_toTopOf="@+id/idboton_hoteles"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/idboton_autos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/furgoneta_de_reparto"
         android:text="@string/boton_autos"
+        android:textColor="@color/material_dynamic_neutral30"
         android:textSize="8sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idboton_vuelos" />
+        app:layout_constraintTop_toBottomOf="@+id/idboton_vuelos"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/idboton_vuelos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/avion"
         android:text="@string/boton_vuelos"
+        android:textColor="@color/material_dynamic_neutral30"
         android:textSize="8sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#020202"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/idboton_idavuelta"
@@ -63,10 +88,14 @@
         android:layout_height="35dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
         android:text="@string/boton_idavuelta"
+        android:textColor="@color/material_dynamic_neutral30"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idboton_autos" />
+        app:layout_constraintTop_toBottomOf="@+id/idboton_autos"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/idboton_solamenteida"
@@ -74,17 +103,22 @@
         android:layout_height="35dp"
         android:layout_marginStart="6dp"
         android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFFFFF"
         android:text="@string/boton_solamenteida"
+        android:textColor="@color/material_dynamic_neutral30"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/idboton_idavuelta"
-        app:layout_constraintTop_toTopOf="@+id/idboton_idavuelta" />
+        app:layout_constraintTop_toTopOf="@+id/idboton_idavuelta"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
     <TextView
         android:id="@+id/idtext_origen"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/avion"
         android:text="@string/idtex_entrar"
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="@+id/idboton_solamenteida"
@@ -96,6 +130,7 @@
         android:id="@+id/idtext_destino"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
+        android:drawableLeft="@drawable/aterrizaje"
         android:text="@string/text_destino"
         app:layout_constraintEnd_toEndOf="@+id/idtext_origen"
         app:layout_constraintStart_toStartOf="@+id/idtext_origen"
@@ -107,7 +142,9 @@
         android:layout_width="200dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/calendario"
         android:text="@string/text_diaida"
+        android:textAlignment="textStart"
         app:layout_constraintStart_toStartOf="@+id/idtext_destino"
         app:layout_constraintTop_toBottomOf="@+id/idtext_destino" />
 
@@ -115,8 +152,9 @@
         android:id="@+id/textView5"
         android:layout_width="200dp"
         android:layout_height="35dp"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/calendario"
         android:text="@string/text_diaregreso"
         app:layout_constraintEnd_toEndOf="@+id/idtext_destino"
         app:layout_constraintStart_toEndOf="@+id/idtext_diaida"
@@ -127,6 +165,7 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/asiento"
         android:text="@string/text_clase"
         app:layout_constraintEnd_toEndOf="@+id/idtext_destino"
         app:layout_constraintStart_toStartOf="@+id/idtext_diaida"
@@ -138,6 +177,7 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/usuario"
         android:text="@string/text_personas"
         app:layout_constraintEnd_toEndOf="@+id/idtext_clase"
         app:layout_constraintStart_toStartOf="@+id/idtext_clase"
@@ -157,29 +197,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#E8114B"
+        android:contextClickable="false"
         android:drawableLeft="@drawable/sitio_web_de_viajes"
         android:text="@string/boton_resrvar"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#A21919"
+        android:textColorHint="#BD1E1E"
+        android:textColorLink="#B11C1C"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbar"
-        android:layout_width="411dp"
-        android:layout_height="98dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/idboton_inicio"
         android:layout_width="70dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_in"
+        android:drawableTop="@drawable/casa2"
+        android:forceHasOverlappingRendering="false"
+        android:shadowColor="#FFFFFF"
         android:text="@string/boton_inicio"
+        android:textAlignment="textStart"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textColorLink="#FFFFFF"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -187,9 +230,12 @@
     <Button
         android:id="@+id/idboton_comprar"
         android:layout_width="70dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginStart="5dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTop="@drawable/en_todo_el_mundo"
         android:text="@string/boton_comprar"
+        android:textColor="@color/material_dynamic_neutral30"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/idboton_inicio"
@@ -200,7 +246,10 @@
         android:layout_width="70dp"
         android:layout_height="80dp"
         android:layout_marginStart="5dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTop="@drawable/equipaje"
         android:text="@string/boton_viajes"
+        android:textColor="@color/material_dynamic_neutral30"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/idboton_comprar"
@@ -211,7 +260,11 @@
         android:layout_width="70dp"
         android:layout_height="80dp"
         android:layout_marginStart="5dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTop="@drawable/notificacion"
         android:text="@string/boton_notificaciones"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textColorLink="#FFFFFF"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/idboton_viajes"
@@ -222,7 +275,11 @@
         android:layout_width="70dp"
         android:layout_height="80dp"
         android:layout_marginStart="5dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTop="@drawable/circulo"
         android:text="@string/boton_latam"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textColorLink="@color/white"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/idboton_notificaciones"
@@ -233,11 +290,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="-50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:text="@string/txt_mensaje"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/idboton_reserva" />
+        app:layout_constraintTop_toBottomOf="@+id/idboton_reserva"
+        app:strokeColor="#000000" />
 
     <TextView
         android:id="@+id/idtext_mensaje2"
@@ -254,10 +312,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_wsp"
+        android:textColor="#2196F3"
         app:layout_constraintEnd_toEndOf="@+id/idtext_mensaje2"
         app:layout_constraintStart_toStartOf="@+id/idtext_mensaje2"
         app:layout_constraintTop_toBottomOf="@+id/idtext_mensaje2"
         app:layout_constraintWidth="match_constraint" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idtext_wsp"
+        app:layout_constraintEnd_toStartOf="@+id/idtext_mensaje2"
+        app:layout_constraintTop_toTopOf="@+id/idtext_mensaje"
+        app:srcCompat="@drawable/whatsapp" />
+
+    <TextView
+        android:id="@+id/idtext_comprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/txt_comprar"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     -
 
