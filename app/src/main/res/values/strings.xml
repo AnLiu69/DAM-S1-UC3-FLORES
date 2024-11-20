@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DAM_UC3_FloresMayta</string>
+    <string name="boton_vuelos">Vuelos</string>
+    <string name="boton_paquetes">Paquetes</string>
+    <string name="boton_hoteles">Hoteles</string>
+    <string name="boton_seguros">Seguros</string>
+    <string name="boton_autos">Autos</string>
+    <string name="boton_idavuelta">Ida y vuelta</string>
+    <string name="boton_solamenteida">Solamente ida</string>
+    <string name="idtex_entrar">Origen</string>
+    <string name="text_destino">Destino</string>
+    <string name="text_diaida">Día de ida</string>
+    <string name="text_diaregreso">Día de regreso</string>
+    <string name="text_clase">Clase</string>
+    <string name="text_personas">Número de personas</string>
+    <string name="checkBox_puntos">Usar Puntos LATAM Pass</string>
+    <string name="boton_resrvar">Reservar vuelo</string>
+    <string name="boton_inicio">Inicio</string>
+    <string name="boton_comprar">Comprar</string>
+    <string name="boton_viajes">Mis Viajes</string>
+    <string name="boton_notificaciones">Notificaciones</string>
+    <string name="boton_latam">LATAM Pass</string>
+    <string name="txt_mensaje">Compre vuelos con escala en Sao Paulo con</string>
+    <string name="txt_mensaje2">nuestro asistente virtual</string>
+    <string name="txt_wsp">Abrir WhatsApp</string>
+</resources>

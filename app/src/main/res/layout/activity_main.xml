@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/idboton_paquetes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/boton_paquetes"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/idboton_vuelos"
+        app:layout_constraintTop_toTopOf="@+id/idboton_vuelos" />
+
+    <Button
+        android:id="@+id/idboton_hoteles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/boton_hoteles"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/idboton_paquetes"
+        app:layout_constraintTop_toTopOf="@+id/idboton_paquetes" />
+
+    <Button
+        android:id="@+id/idboton_seguros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/boton_seguros"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/idboton_hoteles"
+        app:layout_constraintTop_toTopOf="@+id/idboton_hoteles" />
+
+    <Button
+        android:id="@+id/idboton_autos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/boton_autos"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idboton_vuelos" />
+
+    <Button
+        android:id="@+id/idboton_vuelos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/boton_vuelos"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/idboton_idavuelta"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/boton_idavuelta"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idboton_autos" />
+
+    <Button
+        android:id="@+id/idboton_solamenteida"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/boton_solamenteida"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idboton_idavuelta"
+        app:layout_constraintTop_toTopOf="@+id/idboton_idavuelta" />
+
+    <TextView
+        android:id="@+id/idtext_origen"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/idtex_entrar"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/idboton_solamenteida"
+        app:layout_constraintStart_toStartOf="@+id/idboton_idavuelta"
+        app:layout_constraintTop_toBottomOf="@+id/idboton_idavuelta"
+        app:layout_constraintWidth="match_constraint" />
+
+    <TextView
+        android:id="@+id/idtext_destino"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="@string/text_destino"
+        app:layout_constraintEnd_toEndOf="@+id/idtext_origen"
+        app:layout_constraintStart_toStartOf="@+id/idtext_origen"
+        app:layout_constraintTop_toBottomOf="@+id/idtext_origen"
+        app:layout_constraintWidth="match_constraint" />
+
+    <TextView
+        android:id="@+id/idtext_diaida"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_diaida"
+        app:layout_constraintStart_toStartOf="@+id/idtext_destino"
+        app:layout_constraintTop_toBottomOf="@+id/idtext_destino" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_diaregreso"
+        app:layout_constraintEnd_toEndOf="@+id/idtext_destino"
+        app:layout_constraintStart_toEndOf="@+id/idtext_diaida"
+        app:layout_constraintTop_toBottomOf="@+id/idtext_destino" />
+
+    <TextView
+        android:id="@+id/idtext_clase"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_clase"
+        app:layout_constraintEnd_toEndOf="@+id/idtext_destino"
+        app:layout_constraintStart_toStartOf="@+id/idtext_diaida"
+        app:layout_constraintTop_toBottomOf="@+id/idtext_diaida"
+        app:layout_constraintWidth="match_constraint" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_personas"
+        app:layout_constraintEnd_toEndOf="@+id/idtext_clase"
+        app:layout_constraintStart_toStartOf="@+id/idtext_clase"
+        app:layout_constraintTop_toBottomOf="@+id/idtext_clase"
+        app:layout_constraintWidth="match_constraint" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBox_puntos"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/idboton_reserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/sitio_web_de_viajes"
+        android:text="@string/boton_resrvar"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="411dp"
+        android:layout_height="98dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/idboton_inicio"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/boton_inicio"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idboton_comprar"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/boton_comprar"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idboton_inicio"
+        app:layout_constraintTop_toTopOf="@+id/idboton_inicio" />
+
+    <Button
+        android:id="@+id/idboton_viajes"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/boton_viajes"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idboton_comprar"
+        app:layout_constraintTop_toTopOf="@+id/idboton_comprar" />
+
+    <Button
+        android:id="@+id/idboton_notificaciones"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/boton_notificaciones"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idboton_viajes"
+        app:layout_constraintTop_toTopOf="@+id/idboton_viajes" />
+
+    <Button
+        android:id="@+id/idboton_latam"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/boton_latam"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idboton_notificaciones"
+        app:layout_constraintTop_toTopOf="@+id/idboton_notificaciones" />
+
+    <TextView
+        android:id="@+id/idtext_mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_mensaje"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/idboton_reserva" />
+
+    <TextView
+        android:id="@+id/idtext_mensaje2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_mensaje2"
+        app:layout_constraintEnd_toEndOf="@+id/idtext_mensaje"
+        app:layout_constraintStart_toStartOf="@+id/idtext_mensaje"
+        app:layout_constraintTop_toBottomOf="@+id/idtext_mensaje"
+        app:layout_constraintWidth="match_constraint" />
+
+    <TextView
+        android:id="@+id/idtext_wsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_wsp"
+        app:layout_constraintEnd_toEndOf="@+id/idtext_mensaje2"
+        app:layout_constraintStart_toStartOf="@+id/idtext_mensaje2"
+        app:layout_constraintTop_toBottomOf="@+id/idtext_mensaje2"
+        app:layout_constraintWidth="match_constraint" />
+
+    -
+
+</androidx.constraintlayout.widget.ConstraintLayout>
